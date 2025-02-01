@@ -1,9 +1,11 @@
 import { useState } from "react";
+import Home from "./Home";
+
 
 function App() {
   return (
     <>
-      <h1>Les's start React.js | Tanveer</h1>
+     <Home />
     </>
   );
 }
