@@ -1,9 +1,13 @@
 ## Start react Basics
 
-# how to create vite react
+## how to create vite react
 
-npx degit user/project#main my-project
-cd my-project
+# - create react app using :- npm create vite@latest
 
-npm install
-npm run dev
+# - go to directory :- cd .yourproject
+
+# - se all nacesary file is present :- dir
+
+# - install all nacesary file :- npm i
+
+# - finaly run project on browser :- npm run dev
