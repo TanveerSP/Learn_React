@@ -21,15 +21,27 @@ function MyApp() {
 // };
 
 const anotherElement = (
-  <a href="https://google.com" target="_blank">Vist Google</a>
-) 
+  <a href="https://google.com" target="_blank">
+    Vist Google
+  </a>
+);
+
+const reactElement = React.createElement(
+  "a",
+  {
+    href: "https://google.com",
+    target: "_blank",
+  },
+  "click me to visit google"
+);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <MyApp />
     {/* anotherElement  */}
-    {/* <App /> */}
+    <App />
     {/* <ReactElement /> */}
     {/* ReactElement  */}
+    {/* // <MyApp />
+  // reactElement */}
   </StrictMode>
 );
