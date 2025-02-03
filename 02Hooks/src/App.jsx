@@ -29,7 +29,7 @@ function App() {
   //   } else {
   //     alert("You can't go below the minimum limit!");
   //   }
-  // };
+  // };   
 
   // =================================== //
   let [count, setCount] = useState(0);
