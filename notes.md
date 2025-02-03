@@ -11,3 +11,7 @@
 # - install all nacesary file :- npm i
 
 # - finaly run project on browser :- npm run dev
+
+## - Install tailwindcss
+
+# - npm install tailwindcss @tailwindcss/vite
