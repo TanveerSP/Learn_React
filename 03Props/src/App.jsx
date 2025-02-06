@@ -2,6 +2,7 @@ import { useState } from "react";
 import Box from "./components/Box";
 import Button from "./components/Button";
 import Card from "./components/Card";
+import Cart from "./components/Cart";
 
 function App() {
   let myObj = {
@@ -11,19 +12,25 @@ function App() {
 
   let newArr = [1, 2, 3];
 
-  let [count, setCount] = useState(0)
+  let [count, setCount] = useState(0);
 
   function hadleClick() {
     setCount(count + 1);
   }
 
   function hadleClickDec() {
-   if(count > 0){
-    setCount(count - 1);
-   } else {
-    alert("Zero se necha nahi ")
-   }
-   
+    if (count > 0) {
+      setCount(count - 1);
+    } else {
+      alert("Zero se necha nahi ");
+    }
+  }
+
+  let [item, setItem] = useState(0);
+
+  function hadleAddItem() {
+    setItem(item + 1);
+    // alert(`Can you added an item to the cart. Current count: ${item}`);
   }
 
   return (
@@ -44,9 +51,11 @@ function App() {
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nihil, dolorem et explicabo natus, sit amet necessitatibus aliquid consectetur laboriosam harum quos, ipsum cumque praesentium!</p>
       </Box> */}
 
-      <Button hadleClick={hadleClick} hadleClickDec={hadleClickDec} text="Increse me" text2="Decrese me">
+      {/* <Button hadleClick={hadleClick} hadleClickDec={hadleClickDec} text="Increse me" text2="Decrese me">
         {count}
-      </Button>
+      </Button> */}
+
+      <Cart hadleAddItem={hadleAddItem} text="Add Item" item={item}></Cart>
     </div>
   );
 }
