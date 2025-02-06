@@ -2,6 +2,7 @@ import React from "react";
 import Counter from "./components/Counter"
 import LikeBtn from "./components/LikeBtn";
 import DarkLightTheme from './components/DarkLightTheme'
+import ShowHide from './components/ShowHide'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       {/* <Counter /> */}
       <LikeBtn />
       <DarkLightTheme />
+      <ShowHide />
     </div>
   );
 }
