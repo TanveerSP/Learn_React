@@ -4,6 +4,7 @@ import LikeBtn from "./components/LikeBtn";
 import DarkLightTheme from './components/DarkLightTheme'
 import ShowHide from './components/ShowHide'
 import FormHandling from "./components/FormHandling";
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <DarkLightTheme />
       <ShowHide />
       <FormHandling />
+      <TodoList />
     </div>
   );
 }
