@@ -16,7 +16,11 @@ function App() {
   //   <LoginBtn />
   // }
 
-  return <div>{isLoggedIn ? <LogoutBtn /> : <LoginBtn />}</div>;
+  return (
+  <div>
+    {isLoggedIn ? <LogoutBtn /> : <LoginBtn />}
+  </div>
+  );
 }
 
 export default App;
