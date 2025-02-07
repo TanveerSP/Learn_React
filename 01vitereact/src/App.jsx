@@ -6,7 +6,7 @@ import LoginBtn from "./components/LoginBtn";
 function App() {
   const username = "tanveer";
 
-  const [isLoggedIn, setLoggedIn] = useState(true);
+  const [isLoggedIn, setLoggedIn] = useState(false);
 
   // if(isLoggedIn){
   //   return (
@@ -16,7 +16,11 @@ function App() {
   //   <LoginBtn />
   // }
 
-  // Logical Opera
+  if(!isLoggedIn){
+    return (
+      <LoginBtn />
+    )
+  }
 
   return (
   <div>
