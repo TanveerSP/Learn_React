@@ -3,6 +3,7 @@ import Counter from "./components/Counter"
 import LikeBtn from "./components/LikeBtn";
 import DarkLightTheme from './components/DarkLightTheme'
 import ShowHide from './components/ShowHide'
+import FormHandling from "./components/FormHandling";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <LikeBtn />
       <DarkLightTheme />
       <ShowHide />
+      <FormHandling />
     </div>
   );
 }

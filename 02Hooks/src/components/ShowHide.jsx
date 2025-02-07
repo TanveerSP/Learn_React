@@ -21,7 +21,7 @@ const ShowHide = () => {
           <input
             className="bg-white p-2 border rounded"
             type="text"
-            placeholder="Enter your password"
+            placeholder="Enter your password"   
           />
         )}
       </div>
