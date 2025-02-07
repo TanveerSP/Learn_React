@@ -15,8 +15,8 @@ function App() {
       <LikeBtn />
       <DarkLightTheme />
       <ShowHide />
-      {/* <FormHandling />
-      <TodoList /> */}
+      <FormHandling />
+      <TodoList />
       <Main />
     </div>
   );
