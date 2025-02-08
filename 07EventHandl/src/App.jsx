@@ -1,15 +1,13 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Button from './Components/Button'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h1> hii </h1>
-    </>
+    <div className=' w-full h-screen bg-[#393939] text-white flex items-center justify-center '>
+      <Button />
+    </div>
   )
 }
 
