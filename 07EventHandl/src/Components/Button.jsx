@@ -6,15 +6,15 @@ const Button = () => {
   }
 
   function handleMouseOver() {
-    alert("para ke uper mouse lekar aaye ho")
+    alert("para ke uper mouse lekar aaye ho");
   }
 
   function handleInputChange(e) {
     // console.log("Inpute value change");
-    let value = []
+    let value = [];
     console.log("Value till now: ", e.target.value);
-    value.push(e.target.value)
-   
+    value.push(e.target.value);
+
     console.log(value);
   }
 
@@ -22,24 +22,37 @@ const Button = () => {
     e.preventDefault();
 
     // I am writing my custom behavior
-    alert("From submit kardu kya")
+    alert("From submit kardu kya");
   }
 
   return (
     <div className="flex flex-col gap-4">
-
-     <p onMouseOver={handleMouseOver} style={{border: "1px solid white"}}>
-        I am a Para
-    </p>     
-
+      {/* Interview Qusetion */}
       <button
+        className="p-3 bg-black"
+        // Qus: -
+        // onClick={alert("Button click hua h"}
+
+        // Ans: -
+        onClick={() => {
+          alert("Button click hua h");
+        }}
+      >
+        Click me
+      </button>
+
+      {/* <p onMouseOver={handleMouseOver} style={{ border: "1px solid white" }}>
+        I am a Para
+      </p> */}
+
+      {/* <button
         onClick={handleClick}
         className="text-lg font-bold border-[1px] p-2 rounded-lg"
       >
         Click Button 1
-      </button>
+      </button> */}
 
-        {/* This type is very bulke or not redable not recomanded */}
+      {/* This type is very bulke or not redable not recomanded */}
       {/* <button
         onClick={(e) => alert("second button clicked 2")}
         className="text-lg font-bold border-[1px] p-2 rounded-lg"
@@ -47,7 +60,7 @@ const Button = () => {
         Click Button 2
       </button> */}
 
-      <form
+      {/* <form
       className="flex gap-5"
       onSubmit={handleSubmit}>
         <input type="text"
@@ -61,7 +74,7 @@ const Button = () => {
         type="submit">
             Submit
         </button>
-      </form>
+      </form> */}
     </div>
   );
 };
