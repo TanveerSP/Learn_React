@@ -9,6 +9,22 @@ const Button = () => {
     alert("para ke uper mouse lekar aaye ho")
   }
 
+  function handleInputChange(e) {
+    // console.log("Inpute value change");
+    let value = []
+    console.log("Value till now: ", e.target.value);
+    value.push(e.target.value)
+   
+    console.log(value);
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    // I am writing my custom behavior
+    alert("From submit kardu kya")
+  }
+
   return (
     <div className="flex flex-col gap-4">
 
@@ -30,6 +46,22 @@ const Button = () => {
       >
         Click Button 2
       </button> */}
+
+      <form
+      className="flex gap-5"
+      onSubmit={handleSubmit}>
+        <input type="text"
+        placeholder="Type text"
+        className="border-[1px] border-white p-2 "
+        // onChange={handleInputChange}
+        onChange={handleInputChange}
+        />
+        <button 
+        className="bg-gray-200 text-black px-2 rounded-md"
+        type="submit">
+            Submit
+        </button>
+      </form>
     </div>
   );
 };
