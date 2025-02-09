@@ -1,11 +1,12 @@
 import React from "react";
 
-const ColorSwitcher = ({ onChangecolor }) => {
+const ColorSwitcher = ({ handleChangeColor }) => {
   return (
     <button
-      onClick={(e) => {
+    className="bg-gray-200 p-2 border-[1px] border-black text-black"
+      onClick={e => {
         e.stopPropagation();
-        onChangecolor();
+        handleChangeColor();
       }}
     >
       change Color
