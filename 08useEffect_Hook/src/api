@@ -1,0 +1,5 @@
+REACT_APP_GIPHY_API_KEY='CvvrZ2tYO1QWemWm2Jba3B9d9T9wtZR3'
+https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}
+
+"3f03d4df713167a5ecf9639df3247fb6"
+"https://api.openweathermap.org/data/2.5/weather?units=metric&q="
