@@ -27,7 +27,7 @@ const RandomGIF = () => {
 
   useEffect(() => {
     fetchGIF();
-  },[change])
+  },[])
   
   
 
