@@ -1,18 +1,16 @@
-import Counter from './components/Counter'
-import Weather from './components/Weather'
-import RandomGIF from './components/RandomGIF'
+import Counter from "./components/Counter";
+import Weather from "./components/Weather";
+import RandomGIF from "./components/RandomGIF";
 import "./App.css";
 
 function App() {
-  return(
-   <div className='main'>
-    Hello Je
-    <div className='innerDiv'>
-      {/* <Counter /> */}
+  return (
+    <div className="w-full h-full ">
+      <Counter />
       <Weather />
+      <RandomGIF />
     </div>
-   </div>
-  )
+  );
 }
 
 export default App;

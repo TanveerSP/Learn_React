@@ -53,13 +53,13 @@ const Counter = () => {
   // cleanup function
   // ####################################
 
-  useEffect(() => {
-    alert("Count is updated")
+  // useEffect(() => {
+  //   alert("Count is updated")
   
-    return () => {
-      alert("count is unmounted form UI")
-    }
-  }, [count])
+  //   return () => {
+  //     alert("count is unmounted form UI")
+  //   }
+  // }, [count])
   
 
   function handleClick() {
@@ -69,11 +69,15 @@ const Counter = () => {
     setTotal(total + 1);
   }
   return (
-    <div>
-      <button onClick={handleClick}>Update Count</button>
-      <h1>count is:{count}</h1>
-      <button onClick={handleClickTotal}>Update Total</button>
-      <h1>total is:{total}</h1>
+    <div className="flex flex-col gap-y-4 items-center justify-center">
+      <button 
+      className="text-lg font-semibold"
+      onClick={handleClick}>Update Count</button>
+      <h1 className="text-2xl font-semibold">count is:{count}</h1>
+      <button 
+      className="text-lg bg-red-100 text-black p-2"
+      onClick={handleClickTotal}>Update Total</button>
+      <h1 className="text-lg font-semibold">total is: {total}</h1>
     </div>
   );
 };
