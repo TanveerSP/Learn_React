@@ -4,16 +4,19 @@ import RandomGIF from "./components/RandomGIF";
 import LoggarCompo from './components/BasicuseEffect/LoggarCompo'
 import "./App.css";
 import TimerCompo from "./components/BasicuseEffect/TimerCompo";
+import DataFatcher from "./components/BasicuseEffect/DataFatcher";
 
 function App() {
   return (
-    <div className=" w-full h-full ">
+    <div className=" flex flex-col items-center justify-center m-auto w-full h-full ">
       {/* <Counter /> */}
       {/* <Weather /> */}
       {/* <RandomGIF /> */}
 
-      <LoggarCompo />
-      <TimerCompo />
+      {/* <LoggarCompo /> */}
+      {/* <TimerCompo /> */}
+      <DataFatcher />
+
     </div>
   );
 }

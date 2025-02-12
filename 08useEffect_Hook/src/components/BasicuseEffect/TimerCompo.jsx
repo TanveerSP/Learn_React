@@ -7,9 +7,11 @@ const TimerCompo = () => {
     useEffect(() => {
         const intervalId = setInterval(() => {
             setSecond(prevSeconds => prevSeconds + 1);
+            console.log("setInterval executed");
         }, 1000);
 
         return ()  => {
+            console.log("Time to stop");
             clearInterval(intervalId);
         }
     }, [])
