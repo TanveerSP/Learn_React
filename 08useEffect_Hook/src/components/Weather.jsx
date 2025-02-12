@@ -17,7 +17,7 @@ const Weather = () => {
         <h1>Weather Information</h1>
         {weather ? 
         (<div>
-            <p>City: {Weather.name}</p>
+            <p>City: {weather.name}</p>
             <p>Temperature: {weather.main.temp}</p>
             <p>Condition: {weather.weather[0].description}</p>
         </div>) :
