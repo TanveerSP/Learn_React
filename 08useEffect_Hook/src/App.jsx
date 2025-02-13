@@ -5,6 +5,7 @@ import LoggarCompo from './components/BasicuseEffect/LoggarCompo'
 import "./App.css";
 import TimerCompo from "./components/BasicuseEffect/TimerCompo";
 import DataFatcher from "./components/BasicuseEffect/DataFatcher";
+import ResizeComponent from "./components/BasicuseEffect/ResizeComponent";
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
 
       {/* <LoggarCompo /> */}
       {/* <TimerCompo /> */}
-      <DataFatcher />
-
+      {/* <DataFatcher /> */}
+      <ResizeComponent />
     </div>
   );
 }
