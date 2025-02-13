@@ -6,6 +6,7 @@ import "./App.css";
 import TimerCompo from "./components/BasicuseEffect/TimerCompo";
 import DataFatcher from "./components/BasicuseEffect/DataFatcher";
 import ResizeComponent from "./components/BasicuseEffect/ResizeComponent";
+import MultiEffectComponent from "./components/BasicuseEffect/MultiEffectComponent";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       {/* <LoggarCompo /> */}
       {/* <TimerCompo /> */}
       {/* <DataFatcher /> */}
-      <ResizeComponent />
+      {/* <ResizeComponent /> */}
+      <MultiEffectComponent />
     </div>
   );
 }
