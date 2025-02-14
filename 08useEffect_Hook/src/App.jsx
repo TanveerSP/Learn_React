@@ -34,13 +34,15 @@ function App() {
         {show && <One />}
       </div>
 
-      <div>
+      {/* <div>
         <h1 className="bg-gray-500 p-2 mt-4 mb-4">User Information</h1>
          <Two userId={userId} />
         <button
         className="bg-blue-500 p-2 mt-4 rounded-2xl"
         onClick={() => setUserId(userId + 1)}>Next User</button>
-      </div>
+      </div> */}
+
+      <Two />
     </div>
   );
 }
