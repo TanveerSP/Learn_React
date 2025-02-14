@@ -10,10 +10,11 @@ import MultiEffectComponent from "./components/BasicuseEffect/MultiEffectCompone
 import One from "./Practice/One";
 import { useState } from "react";
 import Two from "./Practice/Two";
+import OnlineStatus from "./Practice/OnlineStatus";
 
 function App() {
   const [show, setShow] = useState(true);
-  const [userId, setUserId] = useState(1)
+  const [userId, setUserId] = useState(1);
 
   return (
     <div className="p-20 flex flex-col items-center justify-center m-auto w-full h-full ">
@@ -42,7 +43,11 @@ function App() {
         onClick={() => setUserId(userId + 1)}>Next User</button>
       </div> */}
 
-      <Two />
+      {/* <Two /> */}
+
+      <div className="flex justify-center items-center h-screen">
+        <OnlineStatus />
+      </div>
     </div>
   );
 }
