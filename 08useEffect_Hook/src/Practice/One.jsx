@@ -12,7 +12,9 @@ const One = () => {
 
   return (
     <div>
-        <h1>Console Mount</h1>
+        <h1 className='text-red-500 text-center p-1'>
+            Console Mount
+        </h1>
     </div>
   )
 }
