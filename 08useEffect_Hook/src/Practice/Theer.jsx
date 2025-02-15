@@ -24,6 +24,9 @@ const Theer = () => {
     alert("First was changed");
   }, [first]);
 
+ 
+  
+
   return (
     <div className="flex flex-col w-full">
       <Navbar color={"blue" + "navy"} />
