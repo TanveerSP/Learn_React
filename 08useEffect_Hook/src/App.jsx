@@ -11,6 +11,7 @@ import One from "./Practice/One";
 import { useState } from "react";
 import Two from "./Practice/Two";
 import OnlineStatus from "./Practice/OnlineStatus";
+import Theer from "./Practice/Theer";
 
 function App() {
   const [show, setShow] = useState(true);
@@ -28,12 +29,12 @@ function App() {
       {/* <ResizeComponent /> */}
       {/* <MultiEffectComponent /> */}
 
-      <div>
+      {/* <div>
         <button className="bg-gray-600 p-1" onClick={() => setShow(!show)}>
           Toggle One Component
         </button>
         {show && <One />}
-      </div>
+      </div> */}
 
       {/* <div>
         <h1 className="bg-gray-500 p-2 mt-4 mb-4">User Information</h1>
@@ -46,7 +47,8 @@ function App() {
       {/* <Two /> */}
 
       <div className="flex justify-center items-center h-screen">
-        <OnlineStatus />
+        {/* <OnlineStatus /> */}
+        <Theer />
       </div>
     </div>
   );
