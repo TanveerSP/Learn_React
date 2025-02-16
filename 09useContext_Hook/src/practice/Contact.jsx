@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import {CounterContext} from './Home'
 
 const Contact = () => {
+
+  const myContext = useContext(CounterContext);
+  const {count , setCount} = useContext(CounterContext)
+
   return (
-    <div>Contact</div>
+    <button
+    
+    >
+    Click me {count}    
+    </button>
   )
 }
 

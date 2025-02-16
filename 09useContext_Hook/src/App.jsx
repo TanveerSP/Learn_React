@@ -1,7 +1,7 @@
 import { createContext, useState } from "react";
 import "./App.css";
 import ChildA from "./components/ChildA";
-
+import Home from "./practice/Home";
 
 // Step 1: Create Context and Export it
 export const UseContext = createContext(null);
@@ -15,11 +15,11 @@ function App() {
   return (
     <>
       <h1> Hello React JS</h1>
-      {/* How can use useContext */}
+      How can use useContext
       {/* Step 2 & 3: Wrap child components with Provider */}
-      <UseContext.Provider value={user}>
+      {/* <UseContext.Provider value={user}> */}
         {/* Theme */}
-        <ThemeContext.Provider value={{ theme, setTheme }}>
+        {/* <ThemeContext.Provider value={{ theme, setTheme }}>
           <div
             id="contaner"
             style={{
@@ -30,7 +30,8 @@ function App() {
             <ChildA />
           </div>
         </ThemeContext.Provider>
-      </UseContext.Provider>
+      </UseContext.Provider> */}
+      <Home />
     </>
   );
 }
