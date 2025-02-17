@@ -1,0 +1,19 @@
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    align-items: center;
+    background-color: palegreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    height: 50px;
+}
+li{
+    color: red;
+    list-style: none;
+}
+
+:active-link{
+    border: 2px solid red;
+}
