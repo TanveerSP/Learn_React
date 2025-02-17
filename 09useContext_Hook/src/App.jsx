@@ -1,17 +1,17 @@
-import { createContext, useState } from "react";
+// import { createContext, useState } from "react";
 import "./App.css";
-import ChildA from "./components/ChildA";
+// import ChildA from "./components/ChildA";
 import Home from "./practice/Home";
 
 // Step 1: Create Context and Export it
-export const UseContext = createContext(null);
+// export const UseContext = createContext(null);
 
 // Step1: Create Context and Export it
-export const ThemeContext = createContext();
+// export const ThemeContext = createContext();
 
 function App() {
-  const [user, setUser] = useState({ name: "Tanveer" });
-  const [theme, setTheme] = useState("light");
+  // const [user, setUser] = useState({ name: "Tanveer" });
+  // const [theme, setTheme] = useState("light");
   return (
     <>
       <h1> Hello React JS</h1>
