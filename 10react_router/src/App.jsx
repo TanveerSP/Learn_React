@@ -8,16 +8,30 @@ import Navbar from "./components/Navbar";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: 
-    <Home />,
+    element: (
+      <div>
+        <Navbar />
+        <Home />
+      </div>
+    ),
   },
   {
     path: "/about",
-    element: <About />,
+    element: (
+      <div>
+        <Navbar />
+        <About />
+      </div>
+    ),
   },
   {
     path: "/contact",
-    element: <Contact />,
+    element: (
+      <div>
+        <Navbar />
+        <Contact />
+      </div>
+    ),
   },
 ]);
 
