@@ -8,7 +8,7 @@ const Contact = () => {
 
   return (
     <button
-    
+     onClick={() => setCount((prev) => prev + 1)}
     >
     Click me {count}    
     </button>
