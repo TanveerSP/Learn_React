@@ -11,6 +11,9 @@ const About = () => {
   return (
     <div>
       <h1>About Page</h1>
+      <button onClick={handleNavigate}>
+        Go To my Profile
+      </button>
     </div>
   )
 }
