@@ -5,10 +5,15 @@ const PracticeForm1 = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors, disabled },
+    formState: { errors, isSubmitting },
   } = useForm();
 
-  function onSubmit(data) {
+//   function onSubmit(data) {
+//     console.log("Form detail", data);
+//   }
+
+async  function onSubmit(data) {
+    await new Promise((resolve) => setTimeout(resolve,5000))
     console.log("Form detail", data);
   }
 
@@ -17,19 +22,37 @@ const PracticeForm1 = () => {
       <form onSubmit={handleSubmit(onSubmit)} action="">
         <div>
           <label htmlFor="firstName">First Name: </label>
-          <input {...register("firstName",
-            {minLength: 3, maxLength: 7, required: true}
-          )} type="text" />
+          <input
+          className={errors.firstName ? "input-error" : ""}
+            {...register("firstName", {
+              minLength: {value:3, message:"Minmum 3 latters"},
+              maxLength: {value:7, message:"Mixmum 7 latters"},
+              required: true,
+            })}
+            type="text"
+          />
+          {errors.firstName && (
+          <p className="error-msg">{errors.firstName.message}</p>
+        )}
         </div>
 
         <div>
           <label htmlFor="email">Email: </label>
-          <input {...register("email", {
-            required: true
-          })} type="email" />
+          <input
+          className={errors.email ? "input-error": ""}
+            {...register("email", {
+              required: {value: true, message:"Email are required"},
+            })}
+            type="email"
+          />
+          {errors.email && (<p>
+            {errors.email.message}
+          </p>)}
         </div>
 
-        <input type="submit" />
+        <input type="submit"
+         disabled={isSubmitting}
+        />
       </form>
     </div>
   );
