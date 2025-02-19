@@ -5,6 +5,9 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Param from "./components/Param";
+import Dashbord from "./components/Dashbord";
+import Coursese from "./components/Coursese";
+import MockTest from "./components/MockTest";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +36,30 @@ const router = createBrowserRouter([
         <Contact />
       </div>
     ),
+  },
+  {
+    path: "/dashboard",
+    element: (
+      <div>
+        <Navbar />
+        <Dashbord />
+      </div>
+    ),
+
+    children: [
+      {
+        path: "courses",
+        element: <Coursese />,
+      },
+      {
+        path: "mock-test",
+        element: <MockTest />,
+      },
+      // {
+      //   path: "/reports",
+      //   element,
+      // },
+    ],
   },
   {
     path: "/student/:id",

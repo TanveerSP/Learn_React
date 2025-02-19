@@ -30,6 +30,14 @@ const Navbar = () => {
             Contact
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            className={({ isActive }) => isActive ? "active-link" : ""}
+            to={"/dashboard"}
+          >
+            Dashboard
+          </NavLink>
+        </li>
       </ul>
     </div>
   );
