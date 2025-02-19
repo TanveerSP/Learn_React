@@ -8,6 +8,7 @@ import Param from "./components/Param";
 import Dashbord from "./components/Dashbord";
 import Coursese from "./components/Coursese";
 import MockTest from "./components/MockTest";
+import Error from "./components/Error";
 
 const router = createBrowserRouter([
   {
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
       </div>
     ),
   },
+  {
+    path: '*',
+    element: <Error />
+  }
 ]);
 
 function App() {

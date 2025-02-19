@@ -1,12 +1,12 @@
-import React from 'react'
-import { Outlet } from 'react-router'
+import React from "react";
+import { Outlet } from "react-router";
 
 const Dashbord = () => {
   return (
-    <div>
-        This is Dashboard 
-    </div>
-  )
-}
+    <Outlet>
+      <div>This is Dashboard</div>
+    </Outlet>
+  );
+};
 
-export default Dashbord
+export default Dashbord;
