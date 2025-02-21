@@ -2,9 +2,12 @@ import React from "react";
 import { useForm } from "react-hook-form";
 
 const Practice3 = () => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit,
+    formState: {isSubmitting}
+   } = useForm();
 
-  function submitForm(data) {
+ async function submitForm(data) {
+    await new Promise((resolve)=> setTimeout(resolve, 5000) )
     console.log(data);
   }
 
@@ -32,7 +35,10 @@ const Practice3 = () => {
           />
         </div>
 
-        <input type="submit" />
+        <input type="submit"
+        disabled={isSubmitting}
+        value={isSubmitting? "submittin..": "submit"}
+        />
       </form>
     </div>
   );
