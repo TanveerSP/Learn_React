@@ -1,14 +1,16 @@
 import React from "react";
+import { useRef } from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 
 const UseRefCls = () => {
   const [count, setCount] = useState(0);
-  let val = 1;
-  
+//   let val = 1;
+let val = useRef(0)
+
   function handleCount() {
-    val = val + 1;
-    console.log("Value of val: ", val);
+    val.current = val.current + 1;
+    console.log("Value of val: ", val.current);
     setCount(count + 1);
   }
 
