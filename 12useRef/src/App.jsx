@@ -2,15 +2,17 @@ import "./App.css";
 import PracticeOne from "./components/PracticeOne";
 import PracticeTwo from "./components/PracticeTwo";
 import StopWatch from "./components/StopWatch";
+import TimerWatch from "./components/TimerWatch";
 import UseRefCls from "./components/UseRefCls";
 
 function App() {
   return (
-    <div >
+    <div>
       {/* <UseRefCls /> */}
       {/* <StopWatch /> */}
       {/* <PracticeOne /> */}
-      <PracticeTwo /> 
+      {/* <PracticeTwo />  */}
+      <TimerWatch />
     </div>
   );
 }
