@@ -1,5 +1,6 @@
 import "./App.css";
 import PracticeOne from "./components/PracticeOne";
+import PracticeTwo from "./components/PracticeTwo";
 import StopWatch from "./components/StopWatch";
 import UseRefCls from "./components/UseRefCls";
 
@@ -8,7 +9,8 @@ function App() {
     <div>
       {/* <UseRefCls /> */}
       {/* <StopWatch /> */}
-      <PracticeOne />
+      {/* <PracticeOne /> */}
+      <PracticeTwo /> 
     </div>
   );
 }
