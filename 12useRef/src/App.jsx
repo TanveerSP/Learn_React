@@ -1,5 +1,6 @@
 import "./App.css";
 import PracticeOne from "./components/PracticeOne";
+import PracticeThree from "./components/PracticeThree";
 import PracticeTwo from "./components/PracticeTwo";
 import StopWatch from "./components/StopWatch";
 import TimerWatch from "./components/TimerWatch";
@@ -12,7 +13,8 @@ function App() {
       {/* <StopWatch /> */}
       {/* <PracticeOne /> */}
       {/* <PracticeTwo />  */}
-      <TimerWatch />
+      {/* <TimerWatch /> */}
+      <PracticeThree />
     </div>
   );
 }
