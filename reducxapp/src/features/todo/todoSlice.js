@@ -20,6 +20,8 @@ export const todoSlice = createSlice({
         text: action.payload,
       };
     },
-    removeTodo: (state) => {},
+    removeTodo: (state) => {
+     
+    },
   },
 });

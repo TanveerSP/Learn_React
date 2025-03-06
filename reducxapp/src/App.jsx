@@ -1,14 +1,15 @@
-import './App.css'
-import Counter from './components/Counter'
+import "./App.css";
+import Counter from "./components/Counter";
+import Todo from "./components/Todo";
 
 function App() {
-
   return (
     <>
       <h1>Hello .</h1>
-      <Counter />
+      {/* <Counter /> */}
+      <Todo />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
