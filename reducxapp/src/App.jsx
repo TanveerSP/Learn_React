@@ -1,6 +1,7 @@
 import "./App.css";
 import AddTodo from "./components/AddTodo";
 import Counter from "./components/Counter";
+import PracticeCounter from "./components/PracticeCounter";
 import Todo from "./components/Todo";
 
 function App() {
@@ -8,8 +9,9 @@ function App() {
     <>
       <h1>Hello .</h1>
       {/* <Counter /> */}
-      <AddTodo />
-      <Todo />
+      {/* <AddTodo />
+      <Todo /> */}
+      <PracticeCounter />
     </>
   );
 }
